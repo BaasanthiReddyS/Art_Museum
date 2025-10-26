@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Playfair Display', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +12,104 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.piece {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 250px; /* Prevents expanding beyond intended size */
+        }
+
+/* Product image and hover effect */
+.piece img {
+    width: 100%;
+    height: 45vh;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    z-index: 1; /* Ensure image stays behind the badge */
+}
+
+.piece img:hover {
+    transform: scale(1.05);
+    z-index: 1; /* Keep image's z-index the same */
+}
+
+.pieceh2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;}
+
+.New {
+            text-align: center;
+            padding: 100px 40px;
+            background: linear-gradient(135deg, #f0e4d7 20%, #e8d2bc);
+            position: relative;
+            overflow: hidden;
+            color: #3c2a1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.5s ease;
+            color: white;
+            font-size: 2rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            animation: slideBackground1 9s infinite; /* 12 seconds loop */
+            background-size: cover;
+            background-position: center;
+            
+        }
+
+.New:hover {
+            transform: scale(1.05);
+        }
+
+@keyframes slideBackground1 {
+            0% {
+                background-image: url('#');
+                background-position: left center;
+                background-size: center;
+            }
+            50% {
+                background-image: url('#');
+                background-position: center center;
+                background-size: center;
+            }
+            100% {
+                background-image: url('#');
+                background-position: right center;
+                background-size: center;
+            }
+        }
+
+.New h2 {
+            margin-bottom: 1rem;
+        }
+
+#N{
+            font-family: "WindSong", serif;
+            font: weight 400;
+            font-style: normal; 
+            color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+            transition: color 0.3s ease;}
+
+#N:hover{color: rgba(255, 255, 255, 1);}
+
+.events {
+            text-align: center;
+            background-image: ;
+            padding: 60px 85px;
+            background:white;
+            position: relative;
+            overflow: hidden;
+            justify-content: center;
+            text-align: center;
+            color:grey;
+            background-size: cover;
+            background-position: center;
+            
+        }
